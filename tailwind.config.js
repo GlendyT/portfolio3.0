@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-200%)" },
+        }
+      },
+      animation: {
+        slide: " slide 25s linear infinite",
+        pused: "paused"
+      },
+    },
   },
   plugins: [],
 }
