@@ -20,7 +20,7 @@ const About = () => {
             </div>
             <div className="border-2 border-solid border-slate-600 rounded-2xl">
               <h1 className="font-bold">Education</h1>
-              <o>2023-Udemy Courses</o>
+              <p>2023-Udemy Courses</p>
               <p>2023-June - University </p>
               <p>2018-2019 Associate´s Degree </p>
             </div>

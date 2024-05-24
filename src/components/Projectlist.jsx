@@ -1,19 +1,17 @@
-
-
-const Projectlist = ({id, name, image, description}) => {
+const Projectlist = ({ name, image, description }) => {
   return (
-    <div className="w-full m-auto rounded-xl shadow-2xl animate-fadaIn">
-    <div className="relative ">
-      <img src={image} alt="" className=" rounded-t-2xl" />
-    </div>
-    <div className="p-2">
-      <div className="flex justify-between items-center mb-2">
-        <p className="text-xs font-bold">{name}</p>
+    <div className="w-full rounded-xl shadow-2xl ">
+      <div className="relative ">
+        <img src={image} alt="" className=" rounded-t-2xl" />
+        <div className="text-center mb-2 pt-4">
+          <p className="text-sm font-bold">{name}</p>
+        </div>
       </div>
-      <p className="text-slate-600 text-xs hidden">{description}</p>
+      <div className="p-2">
+        <p className="text-slate-600 text-xs hidden">{description}</p>
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Projectlist
+export default Projectlist;
