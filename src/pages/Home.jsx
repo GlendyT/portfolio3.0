@@ -8,14 +8,15 @@ import ContactMe from "../components/ContactMe";
 const Home = () => {
 
   return (
-    <div >
+
+    <div className="w-4/5 m-auto pt-2 ">
       <FirstPage/>
       <About/>
       <Skills />
       <Projects  />
       <ContactMe/>
-      
     </div>
+
 
   );
 };

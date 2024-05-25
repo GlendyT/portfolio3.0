@@ -1,5 +1,5 @@
 //TODO:SKILLS
-import html from "../assets/html.jpg"
+import html from "../assets/html.png"
 import css from "../assets/css.png"
 import bootstrap from "../assets/bootstrap.png"
 import js from "../assets/javascript.png"
