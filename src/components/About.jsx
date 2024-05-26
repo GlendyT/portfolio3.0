@@ -3,7 +3,7 @@ import GT from "../assets/GT.jpg";
 const About = () => {
   return (
     <div
-      className="flex justify-center gap-16 h-96 w-full mb-8 mt-20 border-2 border-gray-500 rounded-3xl backdrop-blur-sm bg-black/70 max-sm:flex max-sm:flex-col max-sm:gap-2 max-md:mx-2 max-2xl:gap-1"
+      className="flex justify-center gap-16 h-96 w-full mb-8 mt-20 border-2 border-gray-500 rounded-3xl backdrop-blur-sm bg-black/70 max-sm:flex max-sm:flex-col max-sm:gap-2 max-md:mx-2 max-2xl:gap-1 font-quatt"
       id="about"
     >
       <div className="flex flex-col m-auto text-center ml-10 text-white max-sm:mx-4 max-md:mx-4 max-2xl:mx-4">
