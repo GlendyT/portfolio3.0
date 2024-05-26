@@ -3,7 +3,7 @@ import linkedin from "../assets/linkedin.png"
 
 const ContactMe = () => {
   return (
-    <div className="flex justify-center flex-col h-96 w-full py-8 mb-24 max-sm:mb-8 text-white" id="contact">
+    <div className="flex justify-center flex-col h-96 w-full py-8 mb-24 max-sm:mb-8 text-white font-quatt" id="contact">
       <div className="flex flex-col m-auto text-center "> 
       <p className="text-2xl font-bold max-sm:text-sm " >Get In Touch</p>
       <h1 className="text-5xl font-extrabold max-sm:text-3xl">Contact Me</h1>

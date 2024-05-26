@@ -1,6 +1,6 @@
 const Projectlist = ({ name, image, description, demo, repo }) => {
   return (
-    <div className="w-full h-80 bg-transparent group perspective max-sm:h-40">
+    <div className="w-full h-80 bg-transparent group perspective max-sm:h-40 font-quatt">
       <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
         <div className="absolute flex flex-col justify-end bg-gradient-to-t from-gray-900 via-gray-900/40  border-4 border-gray-500 w-full h-full rounded-xl overflow-hidden inset-0 backface-hidden px-8 pb-8 max-sm:pb-2 max-sm:px-4 ">
           <img
