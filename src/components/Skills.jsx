@@ -19,8 +19,8 @@ const Skills = ({ category, setCategory }) => {
         <div className="animate-slide inline-block">
           {skills.concat(skills).map((item, index) => {
             return (
-              <div className="inline-block px-4 border-white" key={index}>
-                <img src={item.img} alt="" className="h-36 backdrop-blur-xl bg-white/90 rounded-3xl hover:shadow-[0px_0px_200px_0px_#702459]" />
+              <div className="inline-block px-4 border-white max-sm:px-2" key={index}>
+                <img src={item.img} alt="" className="h-36 backdrop-blur-xl bg-white/90 rounded-3xl hover:shadow-[0px_0px_200px_0px_#702459] max-sm:h-16 max-sm:rounded-md" />
               </div>
             );
           })}
