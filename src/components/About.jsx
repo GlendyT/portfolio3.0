@@ -15,7 +15,7 @@ const About = () => {
               <h1 className="font-bold">Experience </h1>
               <p className=" font-normal ">
                 {" "}
-                1+ Year of experience as Web Developer Freelancer{" "}
+                Experience as Web Developer Freelancer{" "}
               </p>
             </div>
             <div className="border-2 border-solid border-slate-600 rounded-2xl">
