@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ProjectContext } from "../context/ProjectContext";
 import Projectlist from "./Projectlist";
 
-const Projects = ({ category }) => {
+const Projects = () => {
   const { projects } = useContext(ProjectContext);
 
   return (

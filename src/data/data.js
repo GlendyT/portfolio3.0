@@ -12,6 +12,9 @@ import mdb from "../assets/mongodb.png"
 import node from "../assets/nodejs.png"
 import git from "../assets/git.png"
 import github from "../assets/github1.png"
+import docker from "../assets/docker.webp"
+import jest from "../assets/Jest.png"
+import playwright from "../assets/Playwright.webp"
 
 //TODO:PROYECTOS
 import bebidas from "../assets/bebidas.png"
@@ -23,6 +26,7 @@ import cripto from "../assets/project-3.png"
 import noticias from "../assets/noticias.png"
 import ntfx from "../assets/project-4.png"
 import auth from "../assets/auth5.png"
+import Beenyl from "../assets/Beenyl.png"
 
 export const skills = [
     {
@@ -76,6 +80,18 @@ export const skills = [
     {
         img: github,
         name: "GitHub",
+    },
+    {
+        img: docker,
+        name: "Docker",
+    },
+    {
+        img: jest,
+        name: "Jest",
+    },
+    {
+        img: playwright,
+        name: "PlayWright",
     },
 ]
 
@@ -178,5 +194,14 @@ export const projects = [
         category: "JavaScript" && "MYSQL" && "TypeScript",
         repo: "https://github.com/GlendyT/backend-PERN",
         demo: "https://frontend-pern.vercel.app/",
+    },
+    {
+        _id: "12",
+        name: "Bee-nyl Store",
+        image: Beenyl,
+        description: "Ecommerce of vinyls, creating the database using the ORM of PrismaSchema, creating and connecting the Backend using Express and Prisma, Frontend using Tailwind to give styles using the API previously created to show the information. Implementing Playwright for E2E test and  Jest for UnitTest.",
+        category: "TypeScript" && "Postgres" && "Express"  && "Prisma"  && "Docker" && "Jest" && "PlayWright",
+        repo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
+        demo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
     },
 ]
