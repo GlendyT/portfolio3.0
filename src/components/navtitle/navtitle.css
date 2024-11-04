@@ -2,8 +2,8 @@
 
 .title {
     font-weight:500;
-    font-size:2rem;
-    padding-top:8vh;
+    font-size:1rem;
+    padding-top:10px;
     overflow:hidden;
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
@@ -18,6 +18,7 @@
     animation: reveal 7s infinite;
 }
 .title-title span {
+    font-size:0.5rem;
     margin-left:-355px;
     animation: slidein 7s infinite;
     color: white;

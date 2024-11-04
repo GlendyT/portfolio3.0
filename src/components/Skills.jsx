@@ -4,7 +4,7 @@ const Skills = ({ category, setCategory }) => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center gap-2 pt-8 text-white font-quatt"
+        className="flex flex-col items-center justify-center gap-2 pt-44 text-white font-quatt"
         id="skills"
       >
         <h1 className=" text-2xl font-bold max-sm:text-md">
