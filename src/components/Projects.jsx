@@ -6,7 +6,7 @@ const Projects = () => {
   const { projects } = useContext(ProjectContext);
 
   return (
-    <div className="mt-10 pb-56 text-white font-quatt" id="projects">
+    <div className="min-h-screen pt-44 text-white font-quatt max-sm:pt-20" id="projects">
       <h1 className="font-bold text-4xl mb-4 max-sm:text-md text-center ">
         {" "}
         Projects{" "}
