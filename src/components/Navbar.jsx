@@ -1,24 +1,23 @@
 import { useState } from "react";
 import NavTitle from "./navtitle/NavTitle";
+import Switcher from "../utils/Switcher";
 
 const Navbar = () => {
   const [home, setHome] = useState("home");
 
   return (
-    <div className="py-2 flex px-28 justify-between items-center text-white backdrop-blur-sm bg-black/70 max-sm:flex max-sm:justify-center max-sm:px-10 font-quatt ">
-      <h1 className="text-5xl w-44 font-bold max-sm:hidden">
-        {" "}
-        <a href="/">
-          <NavTitle />{" "}
-        </a>
-      </h1>
-      <ul className="flex gap-5 list-none text-sm uppercase font-medium max-sm:justify-between max-sm:gap-2 max-sm:text-xs">
+    <div className="py-0 flex px-28 mx-8 my-4 rounded-full justify-between items-center  dark:text-black text-white bg-black/70 dark:bg-white/80 transition-all duration-500 backdrop-blur-sm  max-sm:flex max-sm:justify-center max-sm:px-2 max-sm:py-4 font-quatt ">
+      <a href="/">
+        <NavTitle />{" "}
+      </a>
+
+      <ul className="flex items-center justify-center gap-5 list-none text-sm uppercase font-medium max-sm:justify-between max-sm:gap-2 max-sm:text-[0.5rem]">
         <a
           href="/"
           onClick={() => setHome("home")}
           className={
             home === "home"
-              ? "pb-px border-solid border-b-2 border-white cursor-pointer"
+              ? "pb-px border-solid border-b-2 dark:border-black border-white font-extrabold cursor-pointer"
               : "cursor-pointer"
           }
         >
@@ -29,7 +28,7 @@ const Navbar = () => {
           onClick={() => setHome("about")}
           className={
             home === "about"
-              ? "pb-px border-solid border-b-2 border-white cursor-pointer"
+              ? "pb-px border-solid border-b-2 dark:border-black border-white font-extrabold cursor-pointer"
               : "cursor-pointer"
           }
         >
@@ -40,7 +39,7 @@ const Navbar = () => {
           onClick={() => setHome("skills")}
           className={
             home === "skills"
-              ? "pb-px border-solid border-b-2 border-white cursor-pointer"
+              ? "pb-px border-solid border-b-2 dark:border-black border-white font-extrabold cursor-pointer"
               : "cursor-pointer"
           }
         >
@@ -51,7 +50,7 @@ const Navbar = () => {
           onClick={() => setHome("projects")}
           className={
             home === "projects"
-              ? "pb-px border-solid border-b-2 border-white cursor-pointer"
+              ? "pb-px border-solid border-b-2 dark:border-black border-white font-extrabold cursor-pointer"
               : "cursor-pointer"
           }
         >
@@ -62,12 +61,13 @@ const Navbar = () => {
           onClick={() => setHome("contact")}
           className={
             home === "contact"
-              ? "pb-px border-solid border-b-2 border-white cursor-pointer"
+              ? "pb-px border-solid border-b-2 dark:border-black border-white cursor-pointer"
               : "cursor-pointer"
           }
         >
           Contact Me
         </a>
+        <Switcher />
       </ul>
     </div>
   );
