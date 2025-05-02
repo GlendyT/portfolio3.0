@@ -18,7 +18,7 @@
     animation: reveal 7s infinite;
 }
 .title-title span {
-    font-size:0.5rem;
+    font-size:0.1rem;
     margin-left:-355px;
     animation: slidein 7s infinite;
     color: white;
