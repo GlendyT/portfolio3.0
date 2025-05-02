@@ -16,7 +16,7 @@ const Skills = ({ category, setCategory }) => {
           </h1>
         </div>
       </div>
-      <div className="h-96">
+      <div className="w-full max-sm:w-96">
         <hr className=" h-0 max-sm:my-1 border-8 border-dashed border-purple-400" />
         <div className="backdrop-blur-sm bg-black/50 overflow-hidden whitespace-nowrap relative">
           <div className="animate-slide inline-block">
