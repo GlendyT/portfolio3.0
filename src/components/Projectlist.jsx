@@ -23,7 +23,7 @@ const Projectlist = ({ name, image, description, demo, repo }) => {
                   Repository
                 </a>
               </button>
-              <button className="bg-black px-2 py-2 text-xs font-semibold text-white rounded-xl">
+              <button className="bg-black px-2 py-2 font-semibold text-white rounded-xl">
                 <a href={demo} target="_blank" rel="noreferrer">
                   Demo Live
                 </a>
