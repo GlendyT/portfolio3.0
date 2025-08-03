@@ -325,7 +325,7 @@ export const experience = [
   {
     id: 2,
     name: "The Magic Shop",
-    web: "https://magicshop-ten.vercel.app/",
+    web: "https://themagicshop.vercel.app/",
     image: army,
   },
 ];
