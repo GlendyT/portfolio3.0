@@ -1,37 +1,43 @@
-const Projectlist = ({ name, image, description, demo, repo }) => {
-  return (
-    <div className="w-full h-60 bg-transparent group perspective max-sm:h-28 font-quatt">
-      <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-        <div className="absolute flex flex-col justify-end bg-gradient-to-t from-gray-900 via-gray-900/40 w-full h-full rounded-xl overflow-hidden inset-0 backface-hidden px-8 pb-8 max-sm:pb-2 max-sm:px-4 ">
-          <img
-            src={image}
-            alt=""
-            className=" absolute inset-0 object-cover backface-hidden w-full h-full rounded-sm"
-          />
-          <div className="backface-hidden absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-          <h3 className="z-10 mt-3 text-base font-bold text-white max-sm:text-[0.4rem]">
-            {name}
-          </h3>
-        </div>
+import { useContext } from "react";
+import { ProjectContext } from "../context/ProjectContext";
 
-        <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 overflow-hidden rounded-xl text-white ">
-          <div className="text-center flex flex-col items-center justify-center h-full px-2 pb-18 ">
-            <p className="my-2 text-xs max-sm:hidden ">{description}</p>
-            <div className="flex flex-row  gap-2 max-sm:text-[0.4rem] max-sm:flex-col">
-              <button className="bg-black px-2 py-2 font-semibold text-white rounded-xl">
-                <a href={repo} target="_blank" rel="noreferrer">
-                  Repository
-                </a>
-              </button>
-              <button className="bg-black px-2 py-2 font-semibold text-white rounded-xl">
-                <a href={demo} target="_blank" rel="noreferrer">
-                  Demo Live
-                </a>
-              </button>
+const Projectlist = () => {
+  const { filteredProjects } = useContext(ProjectContext);
+  return (
+    <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 mt-4 space-y-4 ">
+      {filteredProjects.map((project) => (
+        <div
+          key={project._id}
+          className="relative group cursor-pointer break-inside-avoid mb-4 tech-card "
+        >
+          <div className="overflow-hidden rounded-xl bg-gray-100">
+            <a
+              href={project.demo || project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={project.image}
+                alt={`${project.name} - ${project.description}`}
+                className={` object-cover transition-transform duration-300 group-hover:scale-105 `}
+              />
+              <div className="absolute inset-0 backdrop-blur-sm bg-black/20 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <div className="bg-white bg-opacity-90 rounded-full p-3 transform scale-0 group-hover:scale-100 transition-transform duration-200">
+                  <span className="text-black font-semibold text-sm">
+                    Check it
+                  </span>
+                </div>
+              </div>
+            </a>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+              <h3 className="text-black font-bold text-lg">{project.name}</h3>
+              <p className="text-gray-200 text-sm mt-1 line-clamp-2">
+                {project.description}
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };

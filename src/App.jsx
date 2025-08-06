@@ -1,9 +1,9 @@
-import About from "./components/About";
-import ContactMe from "./components/ContactMe";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import About from "./sections/About";
+import ContactMe from "./sections/ContactMe";
+import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 const App = () => {
   return (
