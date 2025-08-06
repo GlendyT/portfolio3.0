@@ -30,8 +30,8 @@ import Beenyl from "../assets/Beenyl.png";
 
 //TODO:Contact
 import ld from "../assets/linkedin.png";
-import army from "../assets/bts.png"
-import tt from "../assets/logo.webp"
+import army from "../assets/bts.png";
+import tt from "../assets/logo.webp";
 
 export const skills = [
   {
@@ -327,5 +327,33 @@ export const experience = [
     name: "The Magic Shop",
     web: "https://themagicshop.vercel.app/",
     image: army,
+  },
+];
+
+export const navbar = [
+  {
+    id: 1,
+    name: "Home",
+    link: "#home",
+  },
+  {
+    id: 2,
+    name: "About",
+    link: "#about",
+  },
+  {
+    id: 3,
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    id: 4,
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    id: 5,
+    name: "Contact",
+    link: "#contact",
   },
 ];

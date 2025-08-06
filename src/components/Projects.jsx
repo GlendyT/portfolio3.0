@@ -10,7 +10,7 @@ const Projects = () => {
       className="min-h-screen flex flex-col justify-center dark:text-black text-white  transition-all duration-500 font-quatt"
       id="projects"
     >
-      <div className="flex flex-col gap-4 h-auto  dark:text-black text-white bg-black/70 dark:bg-white/80 mx-44 px-4 py-2  rounded-xl max-sm:mx-8">
+      <div className="flex flex-col gap-4 h-auto  dark:text-black text-white bg-black/70 dark:bg-white/30 mx-44 px-4 py-2  rounded-xl max-sm:mx-8">
         <h1 className=" text-4xl max-sm:text-md text-center font-extrabold">
           {" "}
           Projects{" "}
