@@ -5,13 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-::-webkit-scrollbar {
-    display: none;
+* {
+  scrollbar-width: none;
 }
 
-@layer base {
-    html {
-      @apply scroll-smooth;
-    }
-  }
 
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}

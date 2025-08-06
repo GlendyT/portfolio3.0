@@ -6,7 +6,7 @@ const About = () => {
       className="flex min-h-screen font-quatt items-center justify-center"
       id="about"
     >
-      <div className="flex flex-col h-auto py-4 w-full items-center gap-4 mx-44 max-sm:mx-8 justify-center rounded-3xl backdrop-blur-sm  dark:text-black text-white bg-black/70 dark:bg-white/70 transition-all duration-500 max-sm:flex-col max-sm:gap-2 max-2xl:gap-2">
+      <div className="flex flex-col h-auto py-4 w-full items-center gap-4 mx-44 max-sm:mx-8 justify-center rounded-3xl backdrop-blur-sm  dark:text-black text-white bg-black/70 dark:bg-white/30 transition-all duration-500 max-sm:flex-col max-sm:gap-2 max-2xl:gap-2">
         <p className="text-sm">get to know</p>
         <h1 className="text-4xl py-1 font-bold max-sm:text-xl max-2xl:text-base">
           About Me
