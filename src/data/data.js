@@ -101,10 +101,12 @@ export const skills = [
 ];
 
 export const projects = [
+  
   {
     _id: "1",
     name: "Weather App",
     image: climats,
+    level: "basic",
     description:
       "Page where you can check the weather of default countries, using hooks, useContext, React, JavaScript, HTML, AXIOS for the REST API and for CSS styles",
     category: [
@@ -123,6 +125,7 @@ export const projects = [
     _id: "2",
     name: "News Search",
     image: noticias,
+    level: "basic",
     description:
       "Page where you can search for the most relevant news about the default categories, using hooks, useContext, React, JavaScript, HTML, AXIOS for the REST API and for styles, @mui/material @emotion/react @emotion/styled",
     category:
@@ -134,6 +137,7 @@ export const projects = [
     _id: "3",
     name: "Cryptocurrencies",
     image: cripto,
+    level: "basic",
     description:
       "Page to be able to convert cryptocurrencies using React, JavaScript, Hooks, using fetch for the REST API and for styles, CSS @emotion/styled",
     category:
@@ -151,6 +155,7 @@ export const projects = [
     _id: "4",
     name: "Drink Finder",
     image: bebidas,
+    level: "basic",
     description:
       "Page where you can search for drink recipes with the default categories, using hooks, useContext, React, JavaScript, HTML, AXIOS for the REST API and Bootstrap was used for styles",
     category:
@@ -168,6 +173,7 @@ export const projects = [
     _id: "5",
     name: "Task Manager FRONTEND MERN",
     image: task,
+    level: "advanced",
     description:
       "Page to manage tasks, allows you to create a user, add tasks, add collaborators, delete tasks. Using for the Frontend, React, JavaScript, Hooks, useContext, React-Router-Dom to host the information in different links, AXIOS to connect the database, MongoDB to store the data and Tailwindcss for the styles",
     category:
@@ -186,6 +192,7 @@ export const projects = [
     _id: "6",
     name: "Task Manager BACKEND MERN",
     image: task,
+    level: "advanced",
     description:
       "Backend of the MERN project, using the dependencies bcrypt to encrypt the user's password, express to create a multipage, mongoose to connect with MongoDB, JSON Web Token to create Public or Private Key to enter, Nodemailer to confirm the created user",
     category: "JavaScript" && "MongoDB",
@@ -196,6 +203,7 @@ export const projects = [
     _id: "7",
     name: "NextAuth 5 TS",
     image: auth,
+    level: "advanced",
     description:
       "Página utilizando Next-Auth, utilizando las dependencias, zod, bcrypt, uuid. Creando la información a solicitar al usuario en Schema Prisma,",
     category: "TypeScript" && "TailwindCSS",
@@ -206,26 +214,29 @@ export const projects = [
     _id: "8",
     name: "Netflix Clone TS",
     image: ntfx,
+    level: "advanced",
     description:
       "Pagina Clone de Netflix, con las funciones de crear usuario, iniciar sesión, agregar favoritos, agregar usuarios, almacenando la información de las películas en MongoDB, utilizando Next Auth, AXIOS para traer la información del backend, y dando estilos en TailwindCSS",
     category: "MongoDB" && "TailwindCSS" && "Typescript",
     repo: "https://github.com/GlendyT/Netflix-clone",
     demo: "https://paginanetflixclone.vercel.app/auth",
-  },
+  },/*
   {
     _id: "9",
     name: "Weather App TS",
     image: clima,
+    level: "advanced",
     description:
       "Page where you can check the weather of default countries, using hooks, useContext, Typescript, HTML, AXIOS for the REST API and for styles CSS Modules",
     category: "JavaScript" && "MongoDB" && "Typescript" && "CSS",
     repo: "https://github.com/GlendyT/clima-react-typescript",
     demo: "https://clima-typescript.netlify.app/",
-  },
+  },*/
   {
     _id: "10",
     name: " Product Manager Frontend PERN TS",
     image: prdmng,
+    level: "advanced",
     description:
       "Page to manage products, allows you to add a product, add price, add availability, delete products. Using for the Frontend, Typescript, JavaScript, Hooks, useContext, React-Router-Dom to host the information in different links, AXIOS to connect the database, PostgreSQL to store the data and Tailwindcss for the styles.",
     category: "JavaScript" && "PostgreSQL",
@@ -236,6 +247,7 @@ export const projects = [
     _id: "11",
     name: "Product Manager Backend PERN TS",
     image: prdmng,
+    level: "advanced",
     description:
       "Backend of the MERN project, using express dependencies to create multipages, supertest, jest for backend testing, swagger to document the API.",
     category: "JavaScript" && "MYSQL" && "TypeScript",
@@ -246,6 +258,7 @@ export const projects = [
     _id: "12",
     name: "Bee-nyl Store",
     image: Beenyl,
+    level: "advanced",
     description:
       "Ecommerce of vinyls, creating the database using the ORM of PrismaSchema, creating and connecting the Backend using Express and Prisma, Frontend using Tailwind to give styles using the API previously created to show the information. Implementing Playwright for E2E test and  Jest for UnitTest.",
     category:
