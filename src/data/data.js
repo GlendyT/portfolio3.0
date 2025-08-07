@@ -6,7 +6,7 @@ import js from "../assets/javascript.png";
 import reactjs from "../assets/reactjs.png";
 import typescript from "../assets/Typescript.png";
 import twcss from "../assets/twcss.png";
-import java from "../assets/java.png";
+//import java from "../assets/java.png";
 import pstsql from "../assets/postgreSQL.png";
 import mdb from "../assets/mongodb.png";
 import node from "../assets/nodejs.png";
@@ -15,6 +15,7 @@ import github from "../assets/github1.png";
 import docker from "../assets/docker.webp";
 import jest from "../assets/Jest.png";
 import playwright from "../assets/Playwright.webp";
+import gsap from "../assets/gsap.png"
 
 //TODO:PROYECTOS
 import bebidas from "../assets/bebidas.png";
@@ -27,6 +28,8 @@ import noticias from "../assets/noticias.png";
 import ntfx from "../assets/project-4.png";
 import auth from "../assets/auth5.png";
 import Beenyl from "../assets/Beenyl.png";
+import iphone from "../assets/iphone.png";
+import portfolio from "../assets/3dportfolio.png";
 
 //TODO:Contact
 import ld from "../assets/linkedin.png";
@@ -61,11 +64,11 @@ export const skills = [
   {
     img: twcss,
     name: "TailwindCSS",
-  },
+  },/*
   {
     img: java,
     name: "Java",
-  },
+  },*/
   {
     img: pstsql,
     name: "PostgreSQL",
@@ -97,6 +100,10 @@ export const skills = [
   {
     img: playwright,
     name: "PlayWright",
+  },
+    {
+    img: gsap,
+    name: "GSAP",
   },
 ];
 
@@ -220,18 +227,18 @@ export const projects = [
     category: "MongoDB" && "TailwindCSS" && "Typescript",
     repo: "https://github.com/GlendyT/Netflix-clone",
     demo: "https://paginanetflixclone.vercel.app/auth",
-  },/*
+  },
   {
     _id: "9",
     name: "Weather App TS",
     image: clima,
-    level: "advanced",
+    level: "basic",
     description:
       "Page where you can check the weather of default countries, using hooks, useContext, Typescript, HTML, AXIOS for the REST API and for styles CSS Modules",
     category: "JavaScript" && "MongoDB" && "Typescript" && "CSS",
     repo: "https://github.com/GlendyT/clima-react-typescript",
     demo: "https://clima-typescript.netlify.app/",
-  },*/
+  },
   {
     _id: "10",
     name: " Product Manager Frontend PERN TS",
@@ -271,6 +278,34 @@ export const projects = [
       "PlayWright",
     repo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
     demo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
+  },
+    {
+    _id: "13",
+    name: "Apple Frontend clone",
+    image: iphone,
+    level: "animations",
+    description:
+      " Web page clone of Apple, with all the animations ",
+    category:
+      "JavaScript" &&
+      "TailwindCSS" &&
+      "GSAP" ,
+    repo: "https://iphoneclone-ui.vercel.app/",
+    demo: "https://github.com/GlendyT/gsapiphonecloneUI",
+  },
+      {
+    _id: "14",
+    name: "3D Portfolio",
+    image: portfolio,
+    level: "animations",
+    description:
+      " Web page clone with 3D animations using GSAP",
+    category:
+      "JavaScript" &&
+      "TailwindCSS" &&
+      "GSAP" ,
+    repo: "https://3dportofioliogsap.vercel.app/",
+    demo: "https://github.com/GlendyT/3dportofioliogsap",
   },
 ];
 

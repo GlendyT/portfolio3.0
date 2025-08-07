@@ -29,7 +29,7 @@ const Skills = ({ category, setCategory }) => {
                   <img
                     src={item.img}
                     alt=""
-                    className="h-36 backdrop-blur-xl bg-white/90 max-sm:h-24 max-sm:rounded-md"
+                    className="h-44 backdrop-blur-xl  max-sm:h-24 drop-shadow-[0_15px_15px_#5324a3] rounded-md "
                   />
                 </div>
               );
