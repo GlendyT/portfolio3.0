@@ -14,7 +14,7 @@ const Navbar = () => {
     const paragraphSplit = new SplitText(".title", { type: "lines" });
 
     gsap.from(heroSplit.chars, {
-      yPercent: 100,
+      yPercent: 10,
       duration: 1.8,
       ease: "expo.out",
       stagger: 0.04,
@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` flex px-8 mx-8 rounded-full justify-between items-center   transition-all duration-500 backdrop-blur-sm  max-sm:flex max-sm:justify-center max-sm:px-2 max-sm:py-4 font-quatt dark:text-black text-white bg-black/70 dark:bg-white/80  `}
+      className={` flex px-8 mx-8 rounded-full justify-between items-center   transition-all duration-500 backdrop-blur-sm  max-sm:flex max-sm:justify-center max-sm:px-2 max-sm:py-4 code dark:text-black text-white bg-black/70 dark:bg-white/80  `}
     >
       <div className="flex flex-row justify-between w-full">
         <a href="/" className=" max-sm:hidden w-96">

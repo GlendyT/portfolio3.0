@@ -15,7 +15,7 @@ import github from "../assets/github1.png";
 import docker from "../assets/docker.webp";
 import jest from "../assets/Jest.png";
 import playwright from "../assets/Playwright.webp";
-import gsap from "../assets/gsap.png"
+import gsap from "../assets/gsap.png";
 
 //TODO:PROYECTOS
 import bebidas from "../assets/bebidas.png";
@@ -30,6 +30,8 @@ import auth from "../assets/auth5.png";
 import Beenyl from "../assets/Beenyl.png";
 import iphone from "../assets/iphone.png";
 import portfolio from "../assets/3dportfolio.png";
+import cocktail from "../assets/cocktail.png"
+import spylt from "../assets/spylt.png"
 
 //TODO:Contact
 import ld from "../assets/linkedin.png";
@@ -64,11 +66,11 @@ export const skills = [
   {
     img: twcss,
     name: "TailwindCSS",
-  },/*
+  } /*
   {
     img: java,
     name: "Java",
-  },*/
+  },*/,
   {
     img: pstsql,
     name: "PostgreSQL",
@@ -101,14 +103,13 @@ export const skills = [
     img: playwright,
     name: "PlayWright",
   },
-    {
+  {
     img: gsap,
     name: "GSAP",
   },
 ];
 
 export const projects = [
-  
   {
     _id: "1",
     name: "Weather App",
@@ -279,33 +280,45 @@ export const projects = [
     repo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
     demo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
   },
-    {
+  {
     _id: "13",
     name: "Apple Frontend clone",
     image: iphone,
     level: "animations",
-    description:
-      " Web page clone of Apple, with all the animations ",
-    category:
-      "JavaScript" &&
-      "TailwindCSS" &&
-      "GSAP" ,
-    repo: "https://iphoneclone-ui.vercel.app/",
-    demo: "https://github.com/GlendyT/gsapiphonecloneUI",
+    description: " Web page clone of Apple, with all the animations ",
+    category: "JavaScript" && "TailwindCSS" && "GSAP",
+    repo: "  https://github.com/GlendyT/gsapiphonecloneUI",
+    demo: "https://iphoneclone-ui.vercel.app/ ",
   },
-      {
+  {
     _id: "14",
     name: "3D Portfolio",
     image: portfolio,
     level: "animations",
-    description:
-      " Web page clone with 3D animations using GSAP",
-    category:
-      "JavaScript" &&
-      "TailwindCSS" &&
-      "GSAP" ,
-    repo: "https://3dportofioliogsap.vercel.app/",
-    demo: "https://github.com/GlendyT/3dportofioliogsap",
+    description: " Web page clone with 3D animations using GSAP",
+    category: "JavaScript" && "TailwindCSS" && "GSAP",
+    repo: " https://github.com/GlendyT/3dportofioliogsap",
+    demo: "https://3dportofioliogsap.vercel.app/ ",
+  },
+  {
+    _id: "15",
+    name: "Cocktail Bar",
+    image: cocktail,
+    level: "animations",
+    description: "Cocktail Bar with using GSAP",
+    category: "JavaScript" && "TailwindCSS" && "GSAP",
+    repo: "https://github.com/GlendyT/gsap-tutorial",
+    demo: "https://gsap-tutorial-mu.vercel.app/",
+  },
+    {
+    _id: "16",
+    name: "Spylt Clone",
+    image: spylt,
+    level: "animations",
+    description: "Spylt Clone with using GSAP",
+    category: "JavaScript" && "TailwindCSS" && "GSAP",
+    repo: "https://github.com/GlendyT/gsap-awards-tutorial",
+    demo: "https://gsap-awards-tutorial.vercel.app/",
   },
 ];
 
@@ -366,7 +379,7 @@ export const story = [
 export const experience = [
   {
     id: 1,
-    name: "TTech Designers Comalapa",
+    name: "TTech Designers",
     web: "https://ttechdesigners.com/",
     image: tt,
   },

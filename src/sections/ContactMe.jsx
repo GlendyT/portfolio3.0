@@ -2,9 +2,9 @@ import { experience, social } from "../data/data";
 
 const ContactMe = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center">
+    <div className="min-h-screen flex flex-col justify-center code">
       <div className="flex h-96 flex-col  " id="contact">
-        <div className="flex flex-col m-auto text-center  dark:text-black text-white bg-black/80 dark:bg-white/40  rounded-3xl backdrop-blur-lg transition-all duration-500 max-sm:mx-8 max-sm:py-2 ">
+        <div className="flex flex-col m-auto text-center backdrop-blur-2xl  dark:text-black text-white bg-black/80 dark:bg-white/100  rounded-3xl  transition-all duration-500 max-sm:mx-8 max-sm:py-2 ">
           <p className="text-2xl font-bold max-sm:text-sm ">Get In Touch</p>
           <h1 className="text-5xl font-extrabold max-sm:text-3xl">
             Contact Me
@@ -20,7 +20,7 @@ const ContactMe = () => {
                 >
                   <img
                     src={socialmedia.img}
-                    className="w-28 dark:bg-white/25 bg-white rounded-full border-2 border-gray-500"
+                    className="w-28 dark:bg-transparent bg-white rounded-full "
                   />
                   <span>{socialmedia.name}</span>
                 </a>
@@ -35,9 +35,11 @@ const ContactMe = () => {
                 >
                   <img
                     src={freelance.image}
-                    className="w-28 dark:bg-white/25 bg-white rounded-full border-2 border-gray-500"
+                    className="w-28 dark:bg-transparent bg-white rounded-full dark:rounded-sm "
                   />
-                  <span>{freelance.name}</span>
+                  <span className="break-words break-all">
+                    {freelance.name}
+                  </span>
                 </a>
               ))}
             </div>

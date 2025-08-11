@@ -37,11 +37,7 @@ export default {
       animation: {
         slide: " slide 25s linear infinite",
         "blur-text-0": "blur-text 1.5s 0s infinite linear alternate",
-      },
-      fontFamily: {
-        pixel: ["Pixelify Sans", "sans-serif"],
-        quatt: ["Quattrocento Sans", "sans-serif"],
-      },
+      }
     },
   },
 
