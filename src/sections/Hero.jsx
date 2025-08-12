@@ -6,27 +6,16 @@ import { SplitText } from "gsap/all";
 
 const Hero = () => {
   useGSAP(() => {
-    const heroSplit = new SplitText(".hero-content", { type: "chars, words" });
-    const paragraphSplit = new SplitText(".hero-title", { type: "lines" });
+    const heroSplit = new SplitText(".hero-content", { type: "words, chars" });
 
     heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
     gsap.from(heroSplit.chars, {
-      yPercent: 100,
-      duration: 1.8,
-      ease: "expo.out",
-      stagger: 0.04,
-      repeat: -1,
-      yoyo: true,
-      repeatDelay: 2,
-    });
-
-    gsap.from(paragraphSplit.lines, {
+      y: 50,
+      duration: 2,
       opacity: 0,
-      yPercent: 100,
-      duration: 1.8,
-      ease: "expo.out",
-      stagger: 0.06,
-      delay: 1,
+      ease: "back",
+      stagger: 0.02,
+      rotation: "random(-80, 80)",
       repeat: -1,
       yoyo: true,
       repeatDelay: 2,
@@ -35,7 +24,7 @@ const Hero = () => {
 
   return (
     <section
-      className=" min-h-screen flex font-quatt justify-center items-center"
+      className=" min-h-screen flex code justify-center items-center code"
       id="home"
     >
       <div className="flex flex-row  w-full items-center gap-4 mx-8 max-sm:mx-8 justify-center rounded-3xl backdrop-blur-md  dark:text-black text-white bg-black/70 dark:bg-white/30 transition-all duration-500 max-sm:flex-col max-sm:gap-2  max-2xl:gap-2 h-[70vh]">
@@ -46,7 +35,7 @@ const Hero = () => {
           <div className="flex flex-col gap-4 max-sm:gap-2 ">
             <span className="text-xl max-sm:text-lg ">Hello, I´m</span>
 
-            <span className="hero-title font-extrabold text-6xl py-8 max-sm:text-4xl text-white dark:text-black inline-block font-sans hero-content">
+            <span className="hero-title font-extrabold text-6xl py-8 max-sm:text-4xl text-white dark:text-black inline-block hero-content">
               Glendy Tuyuc
             </span>
 

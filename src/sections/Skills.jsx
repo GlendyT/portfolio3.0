@@ -1,18 +1,35 @@
+import { useGSAP } from "@gsap/react";
 import { skills } from "../data/data";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
 
 const Skills = ({ category, setCategory }) => {
+  useGSAP(() => {
+    const heroSplit = new SplitText(".skilltitle", { type: "chars, words" });
+
+    heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
+    gsap.from(heroSplit.chars, {
+      rotationX: -100,
+      transformOrigin: "50% 50% -160px",
+      opacity: 0,
+      duration: 0.8,
+      ease: "power3",
+      stagger: 0.25,
+      repeat: -1,
+      yoyo: true,
+      repeatDelay: 2,
+    });
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center flex-col justify-center">
       <div
-        className="flex flex-col h-96 py-4 mx-44 max-sm:mx-8 items-center justify-center gap-2 font-quatt"
+        className="flex flex-col h-96 py-4 mx-44 max-sm:mx-8 items-center justify-center gap-2 code"
         id="skills"
       >
-        <div className="text-center  dark:text-black text-white bg-black/70 dark:bg-white/30 transition-all duration-500 py-4 px-2 rounded-xl">
-          <h1 className=" text-2xl font-bold max-sm:text-md">
-            Explore My Skills
-          </h1>
-          <h1 className="w-90  max-sm:text-xs pb-4">
-            Programming languages, frameworks and libraries
+        <div className="text-center  dark:text-black text-white  transition-all duration-500 py-4 px-2 rounded-xl">
+          <h1 className=" text-6xl font-extrabold max-sm:text-md skilltitle code">
+            Skills
           </h1>
         </div>
       </div>

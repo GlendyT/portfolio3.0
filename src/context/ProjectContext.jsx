@@ -8,6 +8,7 @@ const ProjectContextProvider = ({ children }) => {
     projects,
   };
 
+
   const [activeTab, setActiveTab] = useState("all");
 
   const levels = ["all", ...new Set(projects.map((project) => project.level))];
@@ -40,6 +41,9 @@ const ProjectContextProvider = ({ children }) => {
     return heights[seed % heights.length];
   };
 
+
+
+
   return (
     <ProjectContext.Provider
       value={{
@@ -48,7 +52,7 @@ const ProjectContextProvider = ({ children }) => {
         setActiveTab,
         levels,
         filteredProjects,
-        getRandomHeight
+        getRandomHeight,
       }}
     >
       {children}

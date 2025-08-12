@@ -83,7 +83,7 @@ const About = () => {
 
   return (
     <section
-      className="flex min-h-screen font-quatt items-center justify-center"
+      className="flex min-h-screen code items-center justify-center"
       id="about"
       ref={sectionRef}
     >
