@@ -1,41 +1,45 @@
 //TODO:SKILLS
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import bootstrap from "../assets/bootstrap.png";
-import js from "../assets/javascript.png";
-import reactjs from "../assets/reactjs.png";
-import typescript from "../assets/Typescript.png";
-import twcss from "../assets/twcss.png";
-//import java from "../assets/java.png";
-import pstsql from "../assets/postgreSQL.png";
-import mdb from "../assets/mongodb.png";
-import node from "../assets/nodejs.png";
-import git from "../assets/git.png";
-import github from "../assets/github1.png";
+import html from "../assets/html.webp";
+import css from "../assets/css.webp";
+import bootstrap from "../assets/bootstrap.webp";
+import js from "../assets/javascript.webp";
+import reactjs from "../assets/reactjs.webp";
+import typescript from "../assets/Typescript.webp";
+import twcss from "../assets/twcss.webp";
+//import java from "../assets/java.webp";
+import pstsql from "../assets/postgreSQL.webp";
+import mdb from "../assets/mongodb.webp";
+import node from "../assets/nodejs.webp";
+import git from "../assets/git.webp";
+import github from "../assets/github1.webp";
 import docker from "../assets/docker.webp";
-import jest from "../assets/Jest.png";
+import jest from "../assets/Jest.webp";
 import playwright from "../assets/Playwright.webp";
-import gsap from "../assets/gsap.png";
+import gsap from "../assets/gsap.webp";
 
 //TODO:PROYECTOS
-import bebidas from "../assets/bebidas.png";
-import clima from "../assets/clima.png";
-import climats from "../assets/climats.png";
-import task from "../assets/uptaskmern.jpg";
-import prdmng from "../assets/prodmngts.png";
-import cripto from "../assets/project-3.png";
-import noticias from "../assets/noticias.png";
-import ntfx from "../assets/project-4.png";
-import auth from "../assets/auth5.png";
-import Beenyl from "../assets/Beenyl.png";
-import iphone from "../assets/iphone.png";
-import portfolio from "../assets/3dportfolio.png";
-import cocktail from "../assets/cocktail.png"
-import spylt from "../assets/spylt.png"
+import bebidas from "../assets/bebidas.webp";
+import clima from "../assets/clima.webp";
+//import climats from "../assets/climats.webp";
+import task from "../assets/uptaskmern.webp";
+import prdmng from "../assets/prodmngts.webp";
+import cripto from "../assets/project-3.webp";
+import noticias from "../assets/noticias.webp";
+import ntfx from "../assets/project-4.webp";
+import auth from "../assets/auth5.webp";
+import Beenyl from "../assets/Beenyl.webp";
+import iphone from "../assets/iphone.webp";
+import portfolio from "../assets/3dportfolio.webp";
+import cocktail from "../assets/cocktail.webp";
+import spylt from "../assets/spylt.webp";
+import maps from "../assets/maps.webp";
+import pokedex from "../assets/pokedex.webp";
+import movies from "../assets/movies.webp";
+import calculator from "../assets/calculadora.webp";
 
 //TODO:Contact
-import ld from "../assets/linkedin.png";
-import army from "../assets/bts.png";
+import ld from "../assets/linkedin.webp";
+import army from "../assets/bts.webp";
 import tt from "../assets/logo.webp";
 
 export const skills = [
@@ -110,6 +114,7 @@ export const skills = [
 ];
 
 export const projects = [
+  /*
   {
     _id: "1",
     name: "Weather App",
@@ -128,7 +133,7 @@ export const projects = [
     ],
     repo: "https://github.com/GlendyT/ClimaApp",
     demo: "https://clima-app-tawny.vercel.app/",
-  },
+  },*/
   {
     _id: "2",
     name: "News Search",
@@ -195,7 +200,7 @@ export const projects = [
       "TailwindCSS",
     repo: "https://github.com/GlendyT/merntask_frontend",
     demo: "",
-  },
+  },/*
   {
     _id: "6",
     name: "Task Manager BACKEND MERN",
@@ -206,7 +211,7 @@ export const projects = [
     category: "JavaScript" && "MongoDB",
     repo: "https://github.com/GlendyT/merntask_backend",
     demo: "https://merntask-frontend-theta.vercel.app/",
-  },
+  },*/
   {
     _id: "7",
     name: "NextAuth 5 TS",
@@ -250,7 +255,7 @@ export const projects = [
     category: "JavaScript" && "PostgreSQL",
     repo: "https://github.com/GlendyT/frontend-PERN",
     demo: "https://frontend-pern.vercel.app/",
-  },
+  },/*
   {
     _id: "11",
     name: "Product Manager Backend PERN TS",
@@ -261,7 +266,7 @@ export const projects = [
     category: "JavaScript" && "MYSQL" && "TypeScript",
     repo: "https://github.com/GlendyT/backend-PERN",
     demo: "https://frontend-pern.vercel.app/",
-  },
+  },*/
   {
     _id: "12",
     name: "Bee-nyl Store",
@@ -310,7 +315,7 @@ export const projects = [
     repo: "https://github.com/GlendyT/gsap-tutorial",
     demo: "https://gsap-tutorial-mu.vercel.app/",
   },
-    {
+  {
     _id: "16",
     name: "Spylt Clone",
     image: spylt,
@@ -319,6 +324,46 @@ export const projects = [
     category: "JavaScript" && "TailwindCSS" && "GSAP",
     repo: "https://github.com/GlendyT/gsap-awards-tutorial",
     demo: "https://gsap-awards-tutorial.vercel.app/",
+  },
+  {
+    _id: "17",
+    name: "Maps App",
+    image: maps,
+    level: "apps",
+    description: "Clone of Maps App using React-native",
+    category: "Typescript" && "CSS" && "React Native",
+    repo: "https://github.com/GlendyT/React-native-mapsapp",
+    demo: "",
+  },
+  {
+    _id: "18",
+    name: "Pokedex App",
+    image: pokedex,
+    level: "apps",
+    description: " Pokedex App using React-native",
+    category: "Typescript" && "CSS" && "React Native",
+    repo: "https://github.com/GlendyT/react-native-pokedex",
+    demo: "",
+  },
+  {
+    _id: "19",
+    name: "Movies App",
+    image: movies,
+    level: "apps",
+    description: "Movie App using React-native",
+    category: "Typescript" && "CSS" && "React Native",
+    repo: "https://github.com/GlendyT/movies-app-react-native",
+    demo: "",
+  },
+  {
+    _id: "20",
+    name: "Calculator App",
+    image: calculator,
+    level: "apps",
+    description: "Calculator using React-native",
+    category: "Typescript" && "CSS" && "React Native",
+    repo: "https://github.com/GlendyT/03-calculator-react-native",
+    demo: "",
   },
 ];
 

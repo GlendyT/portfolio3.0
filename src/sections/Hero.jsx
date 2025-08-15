@@ -1,4 +1,4 @@
-import GT from "../assets/GT.jpg";
+import GT from "../assets/GT.webp";
 import { contact, social } from "../data/data";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

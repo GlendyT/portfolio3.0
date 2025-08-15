@@ -31,7 +31,7 @@ const Projectlist = () => {
   }, [levels]);
 
   return (
-    <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 mt-4 space-y-4 cocktail">
+    <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 mt-4 space-y-4 py-4  cocktail">
       {filteredProjects.map((project) => (
         <div
           key={project._id}
@@ -50,35 +50,26 @@ const Projectlist = () => {
                 {project.description}
               </p>
               <div className="flex-grow"></div>
-              <div className="flex flex-row gap-2 justify-between items-center w-full mt-auto">
-                <div className="bg-white bg-opacity-90 rounded-full px-2 py-1 transform scale-0 group-hover:scale-100 transition-transform duration-200 cursor-pointer">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black font-semibold text-sm"
-                  >
-                    Check it demo
-                  </a>
-                </div>
-                <div className="bg-white bg-opacity-90 rounded-full px-2 py-1 transform scale-0 group-hover:scale-100 transition-transform duration-200 cursor-pointer">
-                  <a
-                    href={project.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black font-semibold text-sm"
-                  >
-                    Check it Repo
-                  </a>
-                </div>
-              </div>
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/100 to-transparent pb-4 px-4 pt-2 rounded-b-xl "></div>
           </div>
-          <h3 className="text-white font-bold text-xs break-words  ">
-            {project.name}
-          </h3>
+
+          <div className="flex flex-row gap-2 justify-between items-center w-full mt-auto">
+            <div className="bg-white  rounded-md px-4 py-1 transition-transform duration-200 cursor-pointer">
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black font-semibold text-sm"
+              >
+                Repo
+              </a>
+            </div>{" "}
+            <h3 className="text-white font-bold text-xs break-words  ">
+              {project.name}
+            </h3>
+          </div>
         </div>
       ))}
     </div>

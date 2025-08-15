@@ -8,7 +8,6 @@ const ProjectContextProvider = ({ children }) => {
     projects,
   };
 
-
   const [activeTab, setActiveTab] = useState("all");
 
   const levels = ["all", ...new Set(projects.map((project) => project.level))];
@@ -18,11 +17,22 @@ const ProjectContextProvider = ({ children }) => {
       ? (() => {
           const basicProjects = projects
             .filter((project) => project.level === "basic")
-            .slice(0, 2);
+            .slice(0, 1);
           const advancedProjects = projects
             .filter((project) => project.level === "advanced")
-            .slice(0, 2);
-          return [...basicProjects, ...advancedProjects];
+            .slice(0, 1);
+          const animationProjects = projects
+            .filter((project) => project.level === "animations")
+            .slice(0, 1);
+          const appsProjects = projects
+            .filter((project) => project.level === "apps")
+            .slice(0, 1);
+          return [
+            ...basicProjects,
+            ...advancedProjects,
+            ...animationProjects,
+            ...appsProjects,
+          ];
         })()
       : projects.filter((project) => project.level === activeTab);
 
@@ -40,9 +50,6 @@ const ProjectContextProvider = ({ children }) => {
 
     return heights[seed % heights.length];
   };
-
-
-
 
   return (
     <ProjectContext.Provider
