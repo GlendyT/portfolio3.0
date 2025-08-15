@@ -7,6 +7,8 @@ const ProjectContextProvider = ({ children }) => {
   const contextValue = {
     projects,
   };
+  const isTablet = ("(max-width: 1024px)");
+  const isMobile = ("(max-width: 600px)");
 
   const [activeTab, setActiveTab] = useState("all");
 
@@ -40,15 +42,13 @@ const ProjectContextProvider = ({ children }) => {
     const seed = parseInt(id) * 31;
     const normalized = (seed % 100) / 100;
 
-    const heights = [
-      Math.floor(200 + normalized * 100), // 200-300px
-      Math.floor(250 + normalized * 150), // 250-400px
-      Math.floor(180 + normalized * 80), // 180-260px
-      Math.floor(300 + normalized * 100), // 300-400px
-      Math.floor(220 + normalized * 120), // 220-340px
-    ];
-
-    return heights[seed % heights.length];
+    if (isMobile) {
+      return Math.floor(150 + normalized * (300 - 150));
+    } else if (isTablet) {
+      return Math.floor(175 + normalized * (350 - 175));
+    } else {
+      return Math.floor(200 + normalized * (400 - 200));
+    }
   };
 
   return (

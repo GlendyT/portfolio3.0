@@ -116,7 +116,7 @@ export const skills = [
 export const projects = [
   /*
   {
-    _id: "1",
+    id: "1",
     name: "Weather App",
     image: climats,
     level: "basic",
@@ -135,7 +135,7 @@ export const projects = [
     demo: "https://clima-app-tawny.vercel.app/",
   },*/
   {
-    _id: "2",
+    id: "2",
     name: "News Search",
     image: noticias,
     level: "basic",
@@ -147,7 +147,7 @@ export const projects = [
     demo: "https://noticias-api-black.vercel.app/",
   },
   {
-    _id: "3",
+    id: "3",
     name: "Cryptocurrencies",
     image: cripto,
     level: "basic",
@@ -165,7 +165,7 @@ export const projects = [
     demo: "https://app-de-conversion-criptomonedas.netlify.app/",
   },
   {
-    _id: "4",
+    id: "4",
     name: "Drink Finder",
     image: bebidas,
     level: "basic",
@@ -183,7 +183,7 @@ export const projects = [
     demo: "https://bebidas-typescript.netlify.app/",
   },
   {
-    _id: "5",
+    id: "5",
     name: "Task Manager FRONTEND MERN",
     image: task,
     level: "advanced",
@@ -202,7 +202,7 @@ export const projects = [
     demo: "",
   },/*
   {
-    _id: "6",
+    id: "6",
     name: "Task Manager BACKEND MERN",
     image: task,
     level: "advanced",
@@ -213,7 +213,7 @@ export const projects = [
     demo: "https://merntask-frontend-theta.vercel.app/",
   },*/
   {
-    _id: "7",
+    id: "7",
     name: "NextAuth 5 TS",
     image: auth,
     level: "advanced",
@@ -224,7 +224,7 @@ export const projects = [
     demo: "https://next-auth-vs.vercel.app/",
   },
   {
-    _id: "8",
+    id: "8",
     name: "Netflix Clone TS",
     image: ntfx,
     level: "advanced",
@@ -235,7 +235,7 @@ export const projects = [
     demo: "https://paginanetflixclone.vercel.app/auth",
   },
   {
-    _id: "9",
+    id: "9",
     name: "Weather App TS",
     image: clima,
     level: "basic",
@@ -246,7 +246,7 @@ export const projects = [
     demo: "https://clima-typescript.netlify.app/",
   },
   {
-    _id: "10",
+    id: "10",
     name: " Product Manager Frontend PERN TS",
     image: prdmng,
     level: "advanced",
@@ -257,7 +257,7 @@ export const projects = [
     demo: "https://frontend-pern.vercel.app/",
   },/*
   {
-    _id: "11",
+    id: "11",
     name: "Product Manager Backend PERN TS",
     image: prdmng,
     level: "advanced",
@@ -268,7 +268,7 @@ export const projects = [
     demo: "https://frontend-pern.vercel.app/",
   },*/
   {
-    _id: "12",
+    id: "12",
     name: "Bee-nyl Store",
     image: Beenyl,
     level: "advanced",
@@ -286,7 +286,7 @@ export const projects = [
     demo: "https://github.com/GlendyT/Backend-TS-Bootcamp",
   },
   {
-    _id: "13",
+    id: "13",
     name: "Apple Frontend clone",
     image: iphone,
     level: "animations",
@@ -296,7 +296,7 @@ export const projects = [
     demo: "https://iphoneclone-ui.vercel.app/ ",
   },
   {
-    _id: "14",
+    id: "14",
     name: "3D Portfolio",
     image: portfolio,
     level: "animations",
@@ -306,7 +306,7 @@ export const projects = [
     demo: "https://3dportofioliogsap.vercel.app/ ",
   },
   {
-    _id: "15",
+    id: "15",
     name: "Cocktail Bar",
     image: cocktail,
     level: "animations",
@@ -316,7 +316,7 @@ export const projects = [
     demo: "https://gsap-tutorial-mu.vercel.app/",
   },
   {
-    _id: "16",
+    id: "16",
     name: "Spylt Clone",
     image: spylt,
     level: "animations",
@@ -326,7 +326,7 @@ export const projects = [
     demo: "https://gsap-awards-tutorial.vercel.app/",
   },
   {
-    _id: "17",
+    id: "17",
     name: "Maps App",
     image: maps,
     level: "apps",
@@ -336,7 +336,7 @@ export const projects = [
     demo: "",
   },
   {
-    _id: "18",
+    id: "18",
     name: "Pokedex App",
     image: pokedex,
     level: "apps",
@@ -346,7 +346,7 @@ export const projects = [
     demo: "",
   },
   {
-    _id: "19",
+    id: "19",
     name: "Movies App",
     image: movies,
     level: "apps",
@@ -356,7 +356,7 @@ export const projects = [
     demo: "",
   },
   {
-    _id: "20",
+    id: "20",
     name: "Calculator App",
     image: calculator,
     level: "apps",

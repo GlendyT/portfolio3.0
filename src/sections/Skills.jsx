@@ -3,7 +3,7 @@ import { skills } from "../data/data";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
 
-const Skills = ({ category, setCategory }) => {
+const Skills = () => {
   useGSAP(() => {
     const heroSplit = new SplitText(".skilltitle", { type: "chars, words" });
 
@@ -22,7 +22,7 @@ const Skills = ({ category, setCategory }) => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center flex-col justify-center">
+    <div className="flex items-center flex-col justify-center">
       <div
         className="flex flex-col h-96 py-4 mx-44 max-sm:mx-8 items-center justify-center gap-2 code"
         id="skills"
