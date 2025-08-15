@@ -83,11 +83,11 @@ const About = () => {
 
   return (
     <section
-      className="flex min-h-screen code items-center justify-center"
+      className="flex  code items-center justify-center pt-24 max-sm:pt-0"
       id="about"
       ref={sectionRef}
     >
-      <div className="flex flex-col h-[70vh] py-4 w-full items-center gap-4 mx-8 max-sm:mx-8 justify-center rounded-3xl backdrop-blur-sm  dark:text-black text-white bg-black/70 dark:bg-white/30 transition-all duration-500 max-sm:flex-col max-sm:gap-2 max-2xl:gap-2 about-text">
+      <div className="flex flex-col h-[75vh] py-4 w-full items-center gap-4 mx-8 max-sm:mx-8 justify-center rounded-3xl backdrop-blur-sm  dark:text-black text-white bg-black/70 dark:bg-white/30 transition-all duration-500 max-sm:flex-col max-sm:gap-2 max-2xl:gap-2 about-text">
         <p className="text-sm">get to know</p>
         <h1 className="text-6xl py-1 font-bold max-sm:text-xl max-2xl:text-2xl ">
           About Me

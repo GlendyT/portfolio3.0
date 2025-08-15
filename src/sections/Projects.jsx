@@ -10,10 +10,10 @@ const Projects = () => {
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center dark:text-black text-white  transition-all duration-500 code w-full pt-20"
+      className="min-h-screen flex flex-col justify-center dark:text-black text-white  transition-all duration-500 code w-full  pt-20"
       id="projects"
     >
-      <div className="flex flex-col gap-0  dark:text-black text-white bg-black/70 dark:bg-white/30 py-2  rounded-xl max-sm:mx-8 px-8 mx-8">
+      <div className="flex flex-col justify-center gap-2 h-auto dark:text-black text-white bg-black/70 dark:bg-white/30 py-2  rounded-xl max-sm:mx-8 px-8 mx-8">
         <div className="flex flex-row justify-between max-sm:flex-col">
           <h1 className=" text-2xl max-sm:text-md text-center font-extrabold">
             {" "}
