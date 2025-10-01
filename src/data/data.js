@@ -1,7 +1,7 @@
 //TODO:SKILLS
 import html from "../assets/html.webp";
 import css from "../assets/css.webp";
-import bootstrap from "../assets/bootstrap.webp";
+//import bootstrap from "../assets/bootstrap.webp";
 import js from "../assets/javascript.webp";
 import reactjs from "../assets/reactjs.webp";
 import typescript from "../assets/Typescript.webp";
@@ -32,10 +32,13 @@ import iphone from "../assets/iphone.webp";
 import portfolio from "../assets/3dportfolio.webp";
 import cocktail from "../assets/cocktail.webp";
 import spylt from "../assets/spylt.webp";
-import maps from "../assets/maps.webp";
+//import maps from "../assets/maps.webp";
 import pokedex from "../assets/pokedex.webp";
-import movies from "../assets/movies.webp";
-import calculator from "../assets/calculadora.webp";
+//import movies from "../assets/movies.webp";
+//import calculator from "../assets/calculadora.webp";
+import realstate from "../assets/realstate.webp";
+import foodapp from "../assets/foodapp.webp";
+import movies2 from "../assets/moviesapp.webp";
 
 //TODO:Contact
 import ld from "../assets/linkedin.webp";
@@ -51,10 +54,10 @@ export const skills = [
     img: css,
     name: "CSS",
   },
-  {
-    img: bootstrap,
-    name: "Bootstrap",
-  },
+  // {
+  //   img: bootstrap,
+  //   name: "Bootstrap",
+  // },
   {
     img: js,
     name: "JavaScript",
@@ -200,7 +203,7 @@ export const projects = [
       "TailwindCSS",
     repo: "https://github.com/GlendyT/merntask_frontend",
     demo: "",
-  },/*
+  } /*
   {
     id: "6",
     name: "Task Manager BACKEND MERN",
@@ -211,7 +214,7 @@ export const projects = [
     category: "JavaScript" && "MongoDB",
     repo: "https://github.com/GlendyT/merntask_backend",
     demo: "https://merntask-frontend-theta.vercel.app/",
-  },*/
+  },*/,
   {
     id: "7",
     name: "NextAuth 5 TS",
@@ -255,7 +258,7 @@ export const projects = [
     category: "JavaScript" && "PostgreSQL",
     repo: "https://github.com/GlendyT/frontend-PERN",
     demo: "https://frontend-pern.vercel.app/",
-  },/*
+  } /*
   {
     id: "11",
     name: "Product Manager Backend PERN TS",
@@ -266,7 +269,7 @@ export const projects = [
     category: "JavaScript" && "MYSQL" && "TypeScript",
     repo: "https://github.com/GlendyT/backend-PERN",
     demo: "https://frontend-pern.vercel.app/",
-  },*/
+  },*/,
   {
     id: "12",
     name: "Bee-nyl Store",
@@ -325,16 +328,16 @@ export const projects = [
     repo: "https://github.com/GlendyT/gsap-awards-tutorial",
     demo: "https://gsap-awards-tutorial.vercel.app/",
   },
-  {
-    id: "17",
-    name: "Maps App",
-    image: maps,
-    level: "apps",
-    description: "Clone of Maps App using React-native",
-    category: "Typescript" && "CSS" && "React Native",
-    repo: "https://github.com/GlendyT/React-native-mapsapp",
-    demo: "",
-  },
+  // {
+  //   id: "17",
+  //   name: "Maps App",
+  //   image: maps,
+  //   level: "apps",
+  //   description: "Clone of Maps App using React-native",
+  //   category: "Typescript" && "CSS" && "React Native",
+  //   repo: "https://github.com/GlendyT/React-native-mapsapp",
+  //   demo: "",
+  // },
   {
     id: "18",
     name: "Pokedex App",
@@ -345,24 +348,55 @@ export const projects = [
     repo: "https://github.com/GlendyT/react-native-pokedex",
     demo: "",
   },
+  // {
+  //   id: "19",
+  //   name: "Movies App",
+  //   image: movies,
+  //   level: "apps",
+  //   description: "Movie App using React-native",
+  //   category: "Typescript" && "CSS" && "React Native",
+  //   repo: "https://github.com/GlendyT/movies-app-react-native",
+  //   demo: "",
+  // },
+  // {
+  //   id: "20",
+  //   name: "Calculator App",
+  //   image: calculator,
+  //   level: "apps",
+  //   description: "Calculator using React-native",
+  //   category: "Typescript" && "CSS" && "React Native",
+  //   repo: "https://github.com/GlendyT/03-calculator-react-native",
+  //   demo: "",
+  // },
   {
-    id: "19",
-    name: "Movies App",
-    image: movies,
+    id: "21",
+    name: "RealState",
+    image: realstate,
     level: "apps",
-    description: "Movie App using React-native",
+    description: "RealState App using React-native, (By JavaScript Mastery )",
     category: "Typescript" && "CSS" && "React Native",
-    repo: "https://github.com/GlendyT/movies-app-react-native",
+    repo: "https://github.com/GlendyT/ReactNative-RealState-Mobile-App",
     demo: "",
   },
   {
-    id: "20",
-    name: "Calculator App",
-    image: calculator,
+    id: "22",
+    name: "Food App",
+    image: foodapp,
     level: "apps",
-    description: "Calculator using React-native",
+    description:
+      "Food Delivery App using React-native, (By JavaScript Mastery )",
     category: "Typescript" && "CSS" && "React Native",
-    repo: "https://github.com/GlendyT/03-calculator-react-native",
+    repo: "https://github.com/GlendyT/ReactNative-FoodApp-Mobile",
+    demo: "",
+  },
+  {
+    id: "23",
+    name: "Movies App",
+    image: movies2,
+    level: "apps",
+    description: "Movies App using React-native, (By JavaScript Mastery )",
+    category: "Typescript" && "CSS" && "React Native",
+    repo: "https://github.com/GlendyT/ReactNative-Movies-Mobile-App",
     demo: "",
   },
 ];
