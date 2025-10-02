@@ -4,9 +4,7 @@ import { ProjectContext } from "../context/ProjectContext";
 import Projectlist from "../components/Projectlist";
 
 const Projects = () => {
-  const { levels, activeTab, setActiveTab } =
-    useContext(ProjectContext);
-
+  const { levels, activeTab, setActiveTab } = useContext(ProjectContext);
 
   return (
     <div
