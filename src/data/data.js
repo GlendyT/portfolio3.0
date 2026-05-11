@@ -456,12 +456,12 @@ export const story = [
 ];
 
 export const experience = [
-  {
-    id: 1,
-    name: "TTech Designers",
-    web: "https://ttechdesigners.com/",
-    image: tt,
-  },
+  // {
+  //   id: 1,
+  //   name: "TTech Designers",
+  //   web: "https://ttechdesigners.com/",
+  //   image: tt,
+  // },
   {
     id: 2,
     name: "The Magic Shop",
